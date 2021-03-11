@@ -5,6 +5,7 @@
     define("db","bookstore");
 
     $conn = new mysqli(host,user,pass,db);
-    if($conn) die("ded");
-    else echo "connected to db"
+    $conn->set_charset("utf8");
+    //if(!$conn) die("ded");
+    //else echo "connected to db"
 ;?>
